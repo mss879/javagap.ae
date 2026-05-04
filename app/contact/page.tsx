@@ -99,13 +99,18 @@ export default function ContactPage() {
                         <div className="grid grid-cols-1 gap-6">
                             <ContactCard
                                 icon={MapPin}
-                                title="Our Location"
+                                title="Our Locations"
                                 details={[
+                                    "UAE Office:",
                                     "Java Global Access Platform FZ-LLC,",
                                     "FDBC4722, Compass Building, Al Shohada Road,",
-                                    "AL Hamra Industrial Zone-FZ,",
-                                    "Ras Al Khaimah,",
-                                    "United Arab Emirates."
+                                    "AL Hamra Industrial Zone-FZ, Ras Al Khaimah,",
+                                    "United Arab Emirates.",
+                                    "\u00A0",
+                                    "Sri Lanka Office:",
+                                    "Java Global Access Platform (Pvt) Ltd,",
+                                    "C/G/04, Sir James Peiris Mawatha,",
+                                    "Colombo 02, Sri Lanka."
                                 ]}
                                 delay={100}
                             />
@@ -114,8 +119,11 @@ export default function ContactPage() {
                                 icon={Phone}
                                 title="Phone & Fax"
                                 details={[
-                                    "Tel : +971 56 822 6844",
-                                    "Fax : +971 56 543 9655"
+                                    "UAE Tel : +971 56 822 6844",
+                                    "UAE Fax : +971 56 543 9655",
+                                    "\u00A0",
+                                    "SL Tel : +94 11 230 5346 / 47 / 48 / 49 / 50",
+                                    "SL Fax : +94 11 230 5351"
                                 ]}
                                 delay={200}
                             />
@@ -124,10 +132,11 @@ export default function ContactPage() {
                                 icon={Mail}
                                 title="Email"
                                 details={[
-                                    "info@javagap.ae"
+                                    "UAE: info@javagap.ae",
+                                    "Sri Lanka: info@javagap.lk"
                                 ]}
                                 action={{
-                                    label: "Send Email",
+                                    label: "Send Email (UAE)",
                                     href: "mailto:info@javagap.ae"
                                 }}
                                 delay={300}
@@ -143,7 +152,7 @@ export default function ContactPage() {
                                     "LICENCE NO. 46001825",
                                     "\u00A0",
                                     "Sri Lankan Company Registration -",
-                                    "PV 00351228"
+                                    "PCC 00361397 / PV 00351228"
                                 ]}
                                 delay={400}
                             />

@@ -18,8 +18,8 @@ const registrations = [
         ],
     },
     {
-        jurisdiction: 'Colombo Port City',
-        subtitle: 'Sri Lanka',
+        jurisdiction: 'Sri Lanka',
+        subtitle: 'Colombo Port City',
         image: '/new-section/Colombo Port City, Sri Lanka.png',
         details: [
             { label: 'Registration No.', value: 'PCC 00361397' },
@@ -27,10 +27,10 @@ const registrations = [
     },
     {
         jurisdiction: 'Sri Lanka',
-        subtitle: 'Government Registration',
+        subtitle: 'Department of Register of Companies',
         image: '/new-section/Sri Lanka gvernment.png',
         details: [
-            { label: 'Company Registration No.', value: 'PV 00351228' },
+            { label: 'Registration No.', value: 'PV 00351228' },
         ],
     },
 ];

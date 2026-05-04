@@ -48,15 +48,31 @@ export default function Footer() {
                         <p className="text-white text-base sm:text-lg leading-relaxed text-justify sm:text-left tracking-tighter sm:tracking-normal">
                             Global Delivery for Tech & Professional Services. Structured professional services and managed operational support for overseas clients.
                         </p>
-                        <p className="text-white/60 text-sm">
-                            Dubai Company Registration - <br />
-                            REGISTRATION NO. 0000004082362<br />
-                            LICENCE NO. 47029062<br />
-                            LICENCE NO. 46001825
-                        </p>
-                        <p className="text-white/60 text-sm">
-                            Sri Lankan Company Registration - <br />PV 00351228
-                        </p>
+                        <div className="text-white/60 text-sm space-y-4">
+                            <h4 className="text-white font-semibold text-base mb-2">Corporate Registration Information</h4>
+                            
+                            <div>
+                                <p className="text-white/80 font-medium">United Arab Emirates (Ras Al Khaimah Free Zone)</p>
+                                <ul className="list-disc list-inside ml-1 space-y-0.5">
+                                    <li>Registration No.: 0000004082362</li>
+                                    <li>Trade License Nos.: 47029062, 46001825</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <p className="text-white/80 font-medium">Colombo Port City, Sri Lanka</p>
+                                <ul className="list-disc list-inside ml-1">
+                                    <li>Registration No.: PCC 00361397</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <p className="text-white/80 font-medium">Sri Lanka</p>
+                                <ul className="list-disc list-inside ml-1">
+                                    <li>Department of Registrar of Companies Registration No.: PV 00351228</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     {/* 2. Contact Details (Takes 2 Columns on large screens) */}
