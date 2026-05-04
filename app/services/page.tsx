@@ -1,9 +1,6 @@
 import React from 'react';
 import ServicesHero from '@/components/services/ServicesHero';
-import ProfessionalServices from '@/components/services/ProfessionalServices';
-import ManagedServices from '@/components/services/ManagedServices';
-import TechAndDataServices from '@/components/services/TechAndDataServices';
-import DeliveryLifecycle from '@/components/DeliveryLifecycle';
+import ComprehensiveServices from '@/components/services/ComprehensiveServices';
 import RiskManagement from '@/components/services/RiskManagement';
 import ServicesClosing from '@/components/services/ServicesClosing';
 import Footer from '@/components/Footer';
@@ -39,12 +36,7 @@ export default function ServicesPage() {
     return (
         <main id="main-content" className="min-h-screen bg-white">
             <ServicesHero />
-            <ProfessionalServices />
-            <ManagedServices />
-            <TechAndDataServices />
-
-
-
+            <ComprehensiveServices />
             <RiskManagement />
             <ServicesClosing />
             <Footer />
