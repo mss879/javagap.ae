@@ -35,12 +35,16 @@ const registrations = [
     },
     {
         jurisdiction: 'Sri Lanka',
-        subtitle: 'Inland Revenue Department',
+        subtitle: 'Inland Revenue Department — Source Tax Compliance Unit',
         image: '/new-section/Sri Lanka gvernment.png',
+        description: 'Confirmation Certificate of the Registration of Bookmaker through an agent or via internet with or without the use of live telecast facilities.',
         details: [
-            { label: 'Betting & Gaming File No.', value: 'BLT - 1047' },
+            { label: 'Reference No.', value: 'TPR / BLT / 2026 / 1047' },
             { label: 'Taxpayer Identification No. (TIN)', value: '242557670' },
+            { label: 'Betting & Gaming File No.', value: 'BLT - 1047' },
+            { label: 'Type of Business', value: 'Through Via Internet (Online)' },
         ],
+        legislation: 'Registered under the Betting and Gaming Levy Act, No. 40 of 1988 and the Betting and Gaming Levy (Amendment) Act, No. 11 of 2023.',
     },
 ];
 
@@ -133,17 +137,22 @@ export default function CorporateRegistration() {
 
                             {/* Details Container */}
                             <div className="flex-1 flex flex-col justify-center min-w-0">
-                                <div className="mb-6">
+                                <div className="mb-4">
                                     <h3 className="text-2xl sm:text-3xl font-semibold text-zinc-900 tracking-tight truncate">
                                         {reg.jurisdiction}
                                     </h3>
                                     <p className="text-sm sm:text-base text-zinc-500 font-medium mt-1">
                                         {reg.subtitle}
                                     </p>
+                                    {'description' in reg && reg.description && (
+                                        <p className="text-xs sm:text-sm text-zinc-400 italic mt-2 leading-relaxed max-w-2xl">
+                                            {reg.description}
+                                        </p>
+                                    )}
                                 </div>
 
                                 {/* Registration Numbers Grid */}
-                                <div className="flex flex-wrap gap-4 sm:gap-8">
+                                <div className="flex flex-wrap gap-4 sm:gap-6">
                                     {reg.details.map((detail, i) => (
                                         <div key={i} className="flex flex-col gap-1.5">
                                             <span className="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-zinc-400">
@@ -155,6 +164,12 @@ export default function CorporateRegistration() {
                                         </div>
                                     ))}
                                 </div>
+
+                                {'legislation' in reg && reg.legislation && (
+                                    <p className="text-[11px] sm:text-xs text-zinc-400 mt-5 leading-relaxed max-w-2xl border-t border-zinc-100 pt-4">
+                                        {reg.legislation}
+                                    </p>
+                                )}
                             </div>
                         </div>
                     ))}
